@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* THIS DESIGN STARTS WITH MOBILE FIRST AND THEN REFORMATS FOR DESKTOP THROUGH MEDIA QUERIES */
+
+/* NAVBAR */
+
+.menulinks{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
