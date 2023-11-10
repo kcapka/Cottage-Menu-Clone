@@ -6,6 +6,10 @@
 
 body{
     font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('./Imgs/ribs.jpeg');
+    background-position: fixed;
+    background-size: cover;
+
 }
 
 /* THIS DESIGN STARTS WITH MOBILE FIRST AND THEN REFORMATS FOR DESKTOP THROUGH MEDIA QUERIES */
@@ -46,3 +50,47 @@ body{
 
 }
 
+/* MAIN */
+
+/*links*/
+
+.menutitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menutitle h1{
+    color: #1b5cc4;
+    font-weight: 700;
+    font-size: 38px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #1b5cc4;
+    width: 100%;
+}
+
+.menutitle .categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menutitle a{
+    font-weight: 700;
+    font-size: 14px;
+    width: 100vh;
+    color: white;
+    background-color: #1b5cc4;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menutitle a:hover{
+    background-color: transparent;
+    color: #1b5cc4;
+}
