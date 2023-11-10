@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 /* THIS DESIGN STARTS WITH MOBILE FIRST AND THEN REFORMATS FOR DESKTOP THROUGH MEDIA QUERIES */
 
 /* NAVBAR */
@@ -16,4 +20,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 75px;
+    background-color: #faf8ec;
+    padding: 0 20px;
+    border-bottom: 2px solid #1b5cc4;
+    box-shadow: 0px 3px 5px rgba(42, 42, 42, 0.484);
 }
+
+.logo{
+    width: 90px;
+}
+
+.mobilelinks i{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.mobilelinks{
+    display: flex;
+    align-items: center;
+}
+
+.fa-bars{
+    font-size: 30px;
+
+}
+
