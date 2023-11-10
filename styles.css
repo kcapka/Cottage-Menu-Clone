@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Josefin Sans', sans-serif;
-    background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('./Imgs/ribs.jpeg');
+    background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./Imgs/ribs.jpeg');
     background-position: fixed;
     background-size: cover;
 
@@ -21,6 +21,8 @@ body{
 }
 
 .navbar{
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,6 +61,8 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 75px;
+    margin-bottom: 50px;
 }
 
 .menutitle h1{
@@ -75,17 +79,18 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .menutitle a{
     font-weight: 700;
-    font-size: 14px;
-    width: 100vh;
+    font-size: 15px;
+    width: 100%;
     color: white;
     background-color: #1b5cc4;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    border-bottom: 2px solid white;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid white;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -93,4 +98,50 @@ body{
 .menutitle a:hover{
     background-color: transparent;
     color: #1b5cc4;
+}
+
+/* MENU ITEMS */
+
+.section-container{
+    background-color: white;
+    padding: 40px 23px 20px;
+    width: 90%;
+    margin: 0 auto 20px;
+}
+
+.section-container h2{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.items{
+    border-left: 1px solid #1b5cc4;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.entry{
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.entrytitle{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.price{
+    text-align: right;
+    font-weight: 500;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.description{
+    color: #757575;
+    font-size: 17px;
 }
