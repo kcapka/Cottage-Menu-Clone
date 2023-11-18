@@ -15,26 +15,30 @@
         <a href="#"><img src="./Imgs/logo.png" class="logo"></a>
         <div class="navlinks">
             <div class="navlinks">
-                <div class="menulinks">
-                    <a href="#">HOME</a>
-                    <a href="#">MENU</a>
-                    <a href="#">DRINKS</a>
-                    <a href="#">EVENTS</a>
-                    <a href="#">PRIVATE PARTIES</a>
-                    <a href="#">GIFT CARDS</a>
-                    <a href="#">CATERING</a>
-                </div>
                 <div class="mobilelinks">
                     <i class="fa-brands fa-twitter" style="color: #000000;"></i>
                     <i class="fa-brands fa-facebook-f" style="color: #000000;"></i>
                     <i class="fa-brands fa-instagram" style="color: #000000;"></i>
                     <i class="fa-brands fa-yelp" style="color: #000000;"></i>
-                    <i class="fa-solid fa-bars" style="color: #000000;"></i>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
                 </div>
             </div>
 
         </div>
     </nav>
+    <div class="menulinks">
+        <a href="#" class="nav-link">HOME</a>
+        <a href="#" class="nav-link">MENU</a>
+        <a href="#" class="nav-link">DRINKS</a>
+        <a href="#" class="nav-link">EVENTS</a>
+        <a href="#" class="nav-link">PRIVATE PARTIES</a>
+        <a href="#" class="nav-link">GIFT CARDS</a>
+        <a href="#" class="nav-link">CATERING</a>
+    </div>
 
     <main>
         <div class="menutitle">
@@ -117,6 +121,23 @@
         <a href="">CATERING</a>
         <a href="">GIFT CARDS</a>
     </footer>
+
+    <script>
+
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".menulinks");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }))
+
+    </script>
     
 </body>
 </html>

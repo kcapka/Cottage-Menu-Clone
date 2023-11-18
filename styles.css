@@ -18,7 +18,35 @@ body{
 /* NAVBAR */
 
 .menulinks{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: -275px;
+    left: 0;
+    background-color: #faf8ec;
+    width: 100%;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.menulinks.active{
+    top: 75px;
+}
+
+.menulinks a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    display: block;
+    font-size: 15px;
+    padding: 10px 0;
+    transition: 0.5s;
+}
+
+.menulinks a:hover{
+    background-color: #1b5cc4;
+    color: white;
 }
 
 .navbar{
@@ -176,4 +204,36 @@ footer a:hover{
 
 main{
     padding-bottom: 50px;
+}
+
+/* hamburger menu */
+
+.hamburger{
+    cursor: pointer;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    background-color: #1b5cc4;
+}
+
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: #1b5cc4;
 }
