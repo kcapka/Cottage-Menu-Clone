@@ -257,8 +257,126 @@ const replaceWithLunch = () => {
         </div>
     </section>
 </div>`;
-document.getElementById("menuitems").outerHTML = lunchMenu;
+    document.getElementById("menuitems").outerHTML = lunchMenu;
 };
+
+const replaceWithKids = () => {
+    let kidsMenu = `<div id="menuitems">
+    <section class="section-container">
+        <h2>Breakfast</h2>
+        <div class="items">
+            <div class="entry">
+                <p class = 'entrytitle'>French Toast</p>
+                <p class="price">$10.75</p>
+                <p class="description">Choice of plain, bananas or strawberries</p>
+            </div>
+            <div class="entry">
+                <p class = 'entrytitle'>Little All American</p>
+                <p class="price">$10.75</p>
+                <p class="description">1 egg any style, bacon + scone</p>
+            </div>
+            <div class="entry">
+                <p class = 'entrytitle'>Fruit Plate</p>
+                <p class="price">$10.75</p>
+                <p class="description">Fresh seasonal selection</p>
+            </div>
+            <div class="entry">
+                <p class = 'entrytitle'>Buttermilk Pancake</p>
+                <p class="price">$10.75</p>
+            </div>
+        </div>
+    </section>
+</div>`;
+    document.getElementById('menuitems').outerHTML = kidsMenu;
+};
+
+const replaceWithBloodDrive = () => {
+    let bloodDriveMenu = `<div id="menuitems">
+    <section class="section-container">
+        <h2>Blood Drive</h2>
+        <p class ='section-subitem'>April 16 Blood Drive</p>
+        <div class="items">
+            <div class="entry">
+                <p class = 'entrytitle'>Blood Drive</p>
+                <p class="description">Next Drive June 2022</p>
+            </div>
+        </div>
+    </section>
+</div>`;
+    document.getElementById('menuitems').outerHTML = bloodDriveMenu;
+};
+
+const replaceWithDinner = () => {
+    let dinnerMenu = `<div id="menuitems">
+    <section class="section-container">
+        <h2>Starters</h2>
+        <div class="items">
+            <div class="entry">
+                <p class = 'entrytitle'>3 Cheese Tart</p>
+                <p class="price">$16.00</p>
+                <p class="description">puffed pastry tart with gorgonzola, goat and parmesan cheese, caramelized onion and shallots and wild mushrooms topped with frisee salad</p>
+            </div>
+            <div class="entry">
+                <p class = 'entrytitle'>Frito Misto</p>
+                <p class="price">$17.00</p>
+                <p class="description">fried calamari rings and tentacles, shrimp, zucchini and haricot vert with a chipotle aioli</p>
+            </div>
+            <div class="entry">
+                <p class = 'entrytitle'>Capellini Crab Cake</p>
+                <p class="price">$18.00</p>
+                <p class="description">pan seared lump crab cake, old bay aioli</p>
+            </div>
+            <div class="entry">
+                <p class = 'entrytitle'>Baked Brie</p>
+                <p class="price">$14.25</p>
+                <p class="description">brie cheese baked and topped with roasted tomato, spinach and mushrooms with toasted crostini</p>
+            </div>
+            <div class="entry">
+                <p class = 'entrytitle'>Guacamole and Chips</p>
+                <p class="price">$12.75</p>
+                <p class="description">served with pico de gallo</p>
+            </div>
+            <div class="entry">
+                <p class = 'entrytitle'>Today's Soup</p>
+                <p class="price">$9.00</p>
+                <p class="description">Bowl</p>
+            </div>
+        </div>
+    </section>
+</div>`;
+    document.getElementById('menuitems').outerHTML = dinnerMenu;
+};
+
+const replaceWithDessert = () => {
+    let dessertMenu = `<div id="menuitems">
+    <section class="section-container">
+        <h2>House Made Dessert</h2>
+        <div class="items">
+            <div class="entry">
+                <p class = 'entrytitle'>Raspberry and White Chocolate Bread Pudding</p>
+                <p class="price">$7.50</p>
+                <p class="description"></p>
+            </div>
+            <div class="entry">
+                <p class = 'entrytitle'>Peanut Butter Pie</p>
+                <p class="price">$7.50</p>
+                <p class="description"></p>
+            </div>
+            <div class="entry">
+                <p class = 'entrytitle'>Chocolate Mousse</p>
+                <p class="price">$7.50</p>
+                <p class="description"></p>
+            </div>
+            <div class="entry">
+                <p class = 'entrytitle'>Lemon Cheesecake</p>
+                <p class="price">$7.50</p>
+                <p class="description"></p>
+            </div>
+        </div>
+    </section>
+</div>`;
+    document.getElementById('menuitems').outerHTML = dessertMenu;
+}
 
 //End menu replacement
 
