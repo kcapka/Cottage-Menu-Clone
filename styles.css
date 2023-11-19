@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Josefin Sans', sans-serif;
-    background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('./Imgs/ribs.jpeg');
+    background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.85)), url('./Imgs/ribs.jpeg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -112,7 +112,7 @@ body{
     width: 100%;
 }
 
-.menutitle a{
+.menutitle p{
     font-weight: 700;
     font-size: 15px;
     width: 100%;
@@ -123,9 +123,10 @@ body{
     border-bottom: 1px solid white;
     text-decoration: none;
     transition: 0.5s;
+    cursor: pointer;
 }
 
-.menutitle a:hover{
+.menutitle p:hover{
     background-color: transparent;
     color: #1b5cc4;
 }
@@ -139,6 +140,12 @@ body{
     margin: 0 auto 20px;
 }
 
+.section-subitem{
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
 .section-container h2{
     text-align: center;
     color: black;
@@ -150,13 +157,14 @@ body{
 .items{
     border-left: 1px solid #1b5cc4;
     padding-left: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .entry{
     border-bottom: 1px solid #e4e4e4;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .entrytitle{
@@ -174,6 +182,7 @@ body{
 .description{
     color: #757575;
     font-size: 17px;
+    line-height: 1.4;
 }
 
 /* FOOTER */
