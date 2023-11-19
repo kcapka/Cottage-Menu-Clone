@@ -131,6 +131,40 @@ body{
     color: #1b5cc4;
 }
 
+
+/* Menu categories interactiveness*/
+
+.breakfast.active{
+    background-color: transparent;
+    color: #1b5cc4;
+}
+
+.lunch.active{
+    background-color: transparent;
+    color: #1b5cc4;
+}
+
+.kids.active{
+    background-color: transparent;
+    color: #1b5cc4;
+}
+
+.blood-drive.active{
+    background-color: transparent;
+    color: #1b5cc4;
+}
+
+.dinner.active{
+    background-color: transparent;
+    color: #1b5cc4;
+}
+
+.dessert.active{
+    background-color: transparent;
+    color: #1b5cc4;
+}
+
+
 /* MENU ITEMS */
 
 .section-container{
