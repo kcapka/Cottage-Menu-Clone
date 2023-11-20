@@ -280,3 +280,46 @@ main{
     transform: translateY(-8px) rotate(-45deg);
     background-color: #1b5cc4;
 }
+
+
+/* responsiveness */
+
+@media screen and (min-width: 900px){
+    
+    /* main menu items */
+    #menuitems{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    
+    .section-container{
+        width: 550px;
+    }
+
+    /* menu title */
+
+    .menutitle .categories{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        gap: 50px;;
+    }
+
+    .menutitle h1{
+        border-bottom: none;
+        font-size: 50px;
+    }
+
+    .menutitle p{
+        border-bottom: none;
+        border: 2px solid #1b5cc4;
+    }
+
+    .menutitle p:hover{
+        background-color: transparent;
+        color: #1b5cc4;
+    }
+
+}
